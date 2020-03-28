@@ -1,0 +1,46 @@
+::-moz-selection { background: #ffdb82; }
+::selection { background: #ffdb82; }
+
+
+img {
+width: 480px;
+}
+
+body {
+    --color: #ff6961;
+    --content: '🙅‍ no compatible';
+    
+    background-color: var(--color);
+  }
+  
+  body::after {
+    content: var(--content);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body {
+      --color: white;
+      --content: '🌞 light version';
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      --color: black;
+      --content: '🌑 dark version';
+        color: #7e7e7e;
+    }
+  }
+
+p{
+    margin:5% 5% 5% 5%;
+    font-size: 20px;
+}
+
+ol{
+    font-size: 18px;
+}
+
+h2{
+    margin:2% 2% 2% 2%;
+}
